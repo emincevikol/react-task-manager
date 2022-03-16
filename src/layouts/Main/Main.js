@@ -2,6 +2,7 @@ import Footer from '../footer/Footer';
 import Header from '../header/Header';
 import Sidebar from '../sidebar/Sidebar';
 import './Main.css';
+import TaskPage from '../../view/TaskPage';
 
 const Main = () => {
     return  <div className="container-fluid">
@@ -15,7 +16,7 @@ const Main = () => {
                     <Sidebar />
                 </div>
                 <div className="col-sm-12 col-md-9 col-lg-10 content-area">
-                    <div>content</div>
+                    <TaskPage/>
                 </div>
             </div>
             <div className="row footer">

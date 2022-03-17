@@ -1,3 +1,6 @@
+npm install react-bootstrap bootstrap@5.1.3
+npm install react-router-dom
+
 # DAY-1
 
 You are exptected to complete tasks below:

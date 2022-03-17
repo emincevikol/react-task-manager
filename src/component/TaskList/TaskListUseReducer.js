@@ -25,18 +25,28 @@ export const taskEditAction = (task) => {
     }
 }
 
+export const bulkInsertAction = (tasks) => {
+    return {
+        type: TASK_ACIONS.BULK_INSERT,
+        payload: tasks
+    }
+}
+
 export const taskReducer = (state, action) => {
     const { type, payload } = action;
     const { task, count } = state;
     switch (type) {
         case TASK_ACIONS.ADD:
-                task.push(payload);
+            task.push(payload);
             return { task }
         case TASK_ACIONS.DELETE:
             return { task }
         case TASK_ACIONS.EDIT:
             return { task }
+        case TASK_ACIONS.BULK_INSERT:
+            console.log(payload)
+            return { tasks : payload , count : payload.lenght }
         default:
-            return state;
+            return {state,count };
     }
 }

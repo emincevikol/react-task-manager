@@ -1,11 +1,11 @@
+import { useState } from "react";
 import TaskList from "../component/TaskList/TaskList";
 
-const TaskPage = () => {
-
+const TaskPage = (props) => {
     return <div>
         <h1>Task Page</h1>
         <hr />
-        <TaskList />
+        <TaskList openedTask={props.openedTask}/>
     </div >;
 }
 

@@ -1,8 +1,15 @@
+import {
+    Link
+} from "react-router-dom";
+import './sidebar.css';
+
 const Sidebar = () => {
-    return <div>Create Task <br></br>
-                Opened Tasks <br></br>
-                Closed Tasks<br></br>   
-            </div>
+    return <div className="leftside-nav">
+            
+            <Link to="/CreateTask" >Create Task</Link>
+            <Link to="/OpenedTask" >Opened Tasks</Link>
+            <Link to="/ClosedTask" >Closed Tasks</Link>
+        </div>;
 }
 
 export default Sidebar;

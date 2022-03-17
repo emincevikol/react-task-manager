@@ -1,0 +1,15 @@
+.leftside-nav > a{
+    display: block;
+    width: 100%;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.leftside-nav > a:hover{
+    background-color: rgb(43, 226, 98);
+}
